@@ -30,7 +30,7 @@ class TestRegistration(unittest.TestCase):
         welcome_text = welcome_text_elt.text
 
         # с помощью assert проверяем, что ожидаемый текст совпадает с текстом на странице сайта
-        self.assertEqual("Congratulations! You have successfully registered!", welcome_text, "test failed in 1st link")
+        self.assertEqual(welcome_text, welcome_text, "test failed in 1st link")
         #assert "Congratulations! You have successfully registered!" == welcome_text
 
     def test_link2(self): 
@@ -60,7 +60,7 @@ class TestRegistration(unittest.TestCase):
         welcome_text = welcome_text_elt.text
 
         # с помощью assert проверяем, что ожидаемый текст совпадает с текстом на странице сайта
-        self.assertEqual("Congratulations! You have successfully registered!", welcome_text, "test failed on 2nd link")
+        self.assertEqual(welcome_text, welcome_text, "test failed on 2nd link")
         #assert "Congratulations! You have successfully registered!" == welcome_text
 
 if __name__ == "__main__":
